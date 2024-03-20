@@ -73,7 +73,7 @@ ul li img {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: #112031;
+    background-color: rgba(17, 32, 49, 0.7);
     height: 100vh;
     width: 100vw;
 }
@@ -88,9 +88,22 @@ ul li img {
     text-align: center;
 }
 
+.card-container img {
+    margin-top: 100px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.container button {
+    margin-top: 25px;
+    background-color: rgba(17, 32, 49, 0.7);
+    border: 1px solid white;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
 }
