@@ -1,6 +1,6 @@
 <?php
 
-$diskContent = file_get_contents('./dishi.json');
+$diskContent = file_get_contents('./dischi.json');
 $diskList = json_decode($diskContent);
 
 header("Content-Type: application/json");
