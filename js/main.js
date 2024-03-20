@@ -4,7 +4,23 @@ createApp({
     data() {
         return {
             diskList: [],
+            diskOverlay: [],
+            showOverlay: false,
         }
+    },
+
+    methods: {
+
+        diskShowOff(index) {
+
+            axios.get('./server.php').then(res => {
+
+                this.diskOverlay = res.data[index];
+                this.showOverlay = true;
+            });
+
+        }
+
     },
 
     mounted() {

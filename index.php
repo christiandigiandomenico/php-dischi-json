@@ -25,7 +25,7 @@
         <div class="container">
 
             <ul>
-                <li v-for="currentDisk in diskList">
+                <li v-for="(currentDisk, index) in diskList" @click="diskShowOff(index)">
                     <img :src="currentDisk.poster">
                     <div class="song-title">{{currentDisk.title}}</div>
                     <div class="band-name">{{currentDisk.author}}</div>
@@ -34,6 +34,21 @@
             </ul>
 
         </div>
+
+        <div class="overlay-show" v-if="showOverlay">
+            <div class="container">
+
+                <div>
+                    <img :src="diskOverlay.poster">
+                    <div class="song-title">{{diskOverlay.title}}</div>
+                    <div class="band-name">{{diskOverlay.author}}</div>
+                    <div class="release">{{diskOverlay.year}}</div>
+                </div>
+
+                <button @click="showOverlay = false">Chiudi</button>
+            </div>
+        </div>
+    </div>
 
     </div>
 

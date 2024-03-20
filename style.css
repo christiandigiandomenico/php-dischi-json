@@ -12,11 +12,14 @@ nav {
 nav img {
     height: 75px;
     width: 75px;
+    margin-left: 165px;
+    margin-top: 20px;
 }
 
 #app {
     background-color: #1d2d3c;
     height: 100%;
+    position: relative;
 }
 
 ul {
@@ -31,7 +34,7 @@ ul {
 
 ul li {
     color: white;
-    width: calc(100% / 4);
+    width: calc(100% / 3 - 90px * 3 / 2);
     background-color: #112030;
     border-radius: 25px;
     text-align: center;
@@ -48,11 +51,15 @@ ul li img {
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .band-name {
     font-family: sans-serif;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .release {
@@ -60,4 +67,17 @@ ul li img {
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+.overlay-show {
+    position: fixed;
+    top: 200px;
+    left: 600px;
+    background-color: #112031;
+}
+
+.overlay-show .container .song-title,
+.overlay-show .container .band-name,
+.overlay-show .container .release {
+    color: white;
 }
