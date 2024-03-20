@@ -38,7 +38,7 @@
         <div class="overlay-show" v-if="showOverlay">
             <div class="container">
 
-                <div>
+                <div class="card-container">
                     <img :src="diskOverlay.poster">
                     <div class="song-title">{{diskOverlay.title}}</div>
                     <div class="band-name">{{diskOverlay.author}}</div>

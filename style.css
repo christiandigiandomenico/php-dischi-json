@@ -71,13 +71,26 @@ ul li img {
 
 .overlay-show {
     position: fixed;
-    top: 200px;
-    left: 600px;
+    top: 0px;
+    left: 0px;
     background-color: #112031;
+    height: 100vh;
+    width: 100vw;
 }
 
 .overlay-show .container .song-title,
 .overlay-show .container .band-name,
 .overlay-show .container .release {
     color: white;
+}
+
+.card-container {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
